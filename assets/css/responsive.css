@@ -272,8 +272,8 @@ Extra large: ---------
     1.5-1400) about features area here
     ***********************/
     .abf_container .abf_content {
-        grid-template-columns: auto auto;
-        grid-gap: 60px;
+        /* grid-template-columns: auto auto; */
+        grid-gap: 40px;
     }
 
     /*********************** 

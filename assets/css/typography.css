@@ -13,7 +13,7 @@ Table Of Contents
 --------------------------
 */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
 }
 h1,
 h2,
@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat';
     font-weight: 500;
     color: #000;
 }
@@ -33,7 +33,7 @@ h4 a,
 h5 a,
 h6 a {
     font-weight: inherit;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat';
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -84,7 +84,7 @@ p img {
 }
 
 span {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat';
 }
 
 
@@ -108,7 +108,7 @@ small {
 /*  blockquotes */
 blockquote {
     border-left: 0 none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 10px 0;
     padding-left: 40px;
     position: relative;
@@ -374,6 +374,8 @@ img {
     --bgH2: rgba(246, 244, 240, 1);
     --greenH2: rgba(100, 153, 105, 1);
     --pink: #C2ACFA;
+    --clientColor: #D0AA6A;
+    --clientcolor2: #9C8E6B;
 }
 
 .container-fluid{
@@ -403,7 +405,7 @@ h5,
 h6 {
     margin: 0;
     color: var(--blackH1);
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Montserrat';
 }
 
 h1 a,

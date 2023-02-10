@@ -149,13 +149,13 @@ CSS INDEX
 }
 .mainButton.buttonH1 {
     color: var(--white);
-    background: var(--blackH1);
-    border: 1px solid var(--blackH1);
+    background: var(--clientColor);
+    border: 1px solid var(--clientColor);
 }
 .secondaryButton.buttonH1 {
-    color: var(--blackH1);
-    background: var(--pink);
-    border: 1px solid var(--pink);
+    color: var(--white);
+    background: var(--clientcolor2);
+    border: 1px solid var(--clientcolor2);
 }
 .transparentButton.buttonH1 {
     color: var(--blackH1);
@@ -166,8 +166,8 @@ CSS INDEX
 .secondaryButton.buttonH1:hover, 
 .transparentButton.buttonH1:hover {
     color: var(--blackH1) !important;
-    background: var(--pink) !important;
-    border: 1px solid var(--pink) !important;
+    background: var(--white) !important;
+    border: 1px solid var transparent !important;
 }
 /* vector & pattern images area here  */
 .vector {
@@ -408,7 +408,9 @@ span.marking {
     color: rgba(211, 211, 211, 1);
     line-height: 32px;
     margin: 30px 0px 48px;
-    font-size: 34px !important;
+    font-size: 20px !important;
+    font-family: 'Montserrat';
+
 }
 /* button area here  */
 .hero_container .hero_button {
@@ -439,10 +441,10 @@ span.marking {
 /* banner image  */
 .hero_wrapper .banner_image {
     position: absolute;
-    right: 0;
-    top: 50%;
+    right: 40px;
+    top: 41%;
     transform: translateY(-50%);
-    max-width: 46%;
+    max-width: 68%;
 }
 /* vector image  */
 
@@ -548,6 +550,7 @@ span.marking {
 .about_features {
     position: relative;
     overflow: hidden;
+    background-color: var(--clientColor);
 }
 .abf_container .abf_items .abf_item:not(:last-child) {
     margin-bottom: 60px;
@@ -562,8 +565,22 @@ span.marking {
     margin-bottom: 30px !important;
 }
 .abf_container .abf_content .section_heading {
-    text-align: start;
-    max-width: 100%;
+    font-family: Montserrat;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.abf_container .abf_content .section_heading2 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 .abf_container .abf_list li:not(:last-child) {
     margin-bottom: 20px;
@@ -608,7 +625,7 @@ span.marking {
     margin-bottom: 30px;
 }
 .grow_container .grow_content {
-    background: var(--blackH1);
+    background: var(--clientColor);
     position: relative;
     padding: 100px 80px;
     z-index: 0;
@@ -845,7 +862,8 @@ span.marking {
 }
 /* hover area */
 .choose_list_content .choose_content:hover {
-    background: var(--blackH1);
+    background: var(--clientColor);
+    color: var(--white);
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -866,9 +884,9 @@ span.marking {
     -o-transition: all .3s ease;
 }
 .choose_list_content .choose_content:hover .package_submit .mainButton.buttonH1 {
-    background: var(--yellowH1);
+    background: var(--white);
     color: var(--blackH1);
-    border: 1px solid var(--yellowHover);
+    border: 1px solid transparent;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -989,10 +1007,11 @@ span.marking {
 }
 .footer_widget .fw_title {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 40px;
+    line-height: 45px;
     text-transform: capitalize;
     margin-bottom: 24px;
+    color: var(--clientColor);
 }
 .footer_widget .fw_list {
     font-weight: 400;
@@ -1037,6 +1056,18 @@ span.marking {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.copyright_container .social a {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--clientColor);
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    color: #fff;
 }
 .copyright_container .social li a:hover {
     color: var(--blackDesH1);
@@ -1252,7 +1283,7 @@ span.marking {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--yellowH1);
+    background: var(--clientColor);
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -1670,7 +1701,7 @@ span.marking {
 }
 .blog_content .content .button .buttonH1 {
     padding: 10px  20px;
-    background: #FFD878;
+    background: var(--clientColor);
     font-family: 'Urbanist', sans-serif;
     font-size: 14px;
 }
@@ -2123,7 +2154,7 @@ span.marking {
     border-color: inherit;
 }
 .c_accor_content .accordion-button:not(.collapsed) {
-    color: var(--yellowH1);
+    color: var(--blackH1);
     background-color: inherit;
     box-shadow: inherit;
 }
@@ -2316,6 +2347,7 @@ span.marking {
     display: flex;
     align-items: center;
     gap: 8px;
+    border-color: transparent;
 }
 .blackButton2.buttonH2 {
     color: var(--white);
@@ -2326,6 +2358,10 @@ span.marking {
     color: var(--blackH2);
     background: var(--white);
     border: 1px solid var(--blackH2);
+}
+
+.whiteButton2.buttonH1{
+    border-color: transparent;
 }
 .yellowButton2.buttonH2 {
     color: var(--blackH2);
@@ -2341,13 +2377,24 @@ span.marking {
 }
 h1.hero_heading2, 
 .section_heading2 {
-    font-family: 'Clash Display';
+    font-family: 'Montserrat';
     font-weight: 600;
-    color: var(--blackH2);
+    color: var(--white);
+    font-size: 48px;
 }
 .section_header2 .desc {
     font-size: 20px;
     line-height: 32px;
+}
+.section_header2 .desc2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+
 }
 span.underline2 {
     text-decoration: underline;
@@ -2512,7 +2559,7 @@ span.underline2 {
 11.5) customer area here
 ===========================*/
 .customer {
-    background: var(--bgH2);
+    background: var(--clientColor);
     position: relative;
     overflow: hidden;
 }
@@ -2545,7 +2592,7 @@ span.underline2 {
     background: var(--bgH2);
 }
 .testimonial2 .testimonial_wrapper2 {
-    background-color: var(--greenH2);
+    background-color: var(--clientColor);
 }
 .ceo_comment {
     display: grid;
@@ -2580,7 +2627,8 @@ span.underline2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--yellowH2);
+    background: var(--white);
+    color: var(--clientColor);
 }
 .ceo_comment .content .info .thumb img {
     max-width: 32px;
@@ -2826,6 +2874,12 @@ span.underline2 {
     background: var(--white);
     border: 1px solid var(--blackH2);
 }
+
+.clientButton.buttonH2 {
+    color: var(--white);
+    background: var(--clientColor);
+    border: 1px solid var(--clientColor);
+}
 .choose2 .choose_list_content .choose_content:hover .package_submit .blackButton2.buttonH2 {
     background: var(--yellowH2);
     color: var(--blackH2);
@@ -2874,7 +2928,7 @@ span.underline2 {
 11.11) cta2 area here
 ===========================*/
 .cta2 {
-    background: var(--greenH2);
+    background: var(--clientColor);
     z-index: 0;
 }
 .cta2 .cta_wrapper {
@@ -2960,4 +3014,70 @@ span.underline2 {
     font-size: 22px;
     line-height: 100%;
     margin-right: 2px;
+}
+
+.icon-client {
+    color: var(--white);
+    background-color: var(--clientColor);
+    border-radius: 50%;
+}
+.justify-items-center{
+    justify-items: center;
+}
+
+.subtitle{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+
+}
+.section_header .d-flex2 p{
+    width: 40px;
+    height: 0px;
+
+    border: 2px solid #D0AA6A;
+
+  
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.section_header .d-flex2 span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #D0AA6A;
+}
+
+.d-flex2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-client{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--clientColor);
+}
+.link-client:hover{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--clientColor);
 }
