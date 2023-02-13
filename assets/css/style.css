@@ -1927,7 +1927,7 @@ span.marking {
     height: 40px;
     align-items: center;
     justify-content: center;
-    background: var(--blackH1);
+    background: var(--clientColor);
     border-radius: 50%;
     color: var(--white);
     font-size: 16px;
@@ -1992,7 +1992,7 @@ span.marking {
     align-items: center;
     justify-content: center;
     color: var(--blackH1);
-    background-color: var(--yellowH1);
+    background-color: var(--clientColor);
     border-radius: 50%;
     font-size: 20px;
     line-height: 100%;
@@ -2059,7 +2059,7 @@ span.marking {
 .contact_info .social_content .thumb {
     width: 60px;
     height: 60px;
-    background: var(--yellowH1);
+    background: var(--clientColor);
     color: var(--blackH1);
     border-radius: 50%;
     display: flex;
@@ -2084,7 +2084,7 @@ span.marking {
 }
 /* contact form  */
 .contact_form {
-    background: var(--blackH1);
+    background: var(--clientColor);
     padding: 40px;
 }
 .contact_form .cf_content {
@@ -2216,7 +2216,7 @@ span.marking {
 /* sign up form  */
 .signUp_form {
     padding: 48px;
-    background: var(--blackH1);
+    background: var(--clientColor);
 }
 /* input  */
 .signUp_input_group {
@@ -2781,6 +2781,7 @@ span.underline2 {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 6px;
+    color: var(--blackH1);
 }
 .offer_content .content p {
     color: var(--blackDesH2);
@@ -3080,4 +3081,13 @@ span.underline2 {
     letter-spacing: 0em;
     text-align: center;
     color: var(--clientColor);
+}
+
+.password{
+    position: relative;
+}
+#togglePassword {
+    right: 10px;
+    position: absolute;
+    top: 35%;
 }
