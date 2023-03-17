@@ -92,6 +92,9 @@ CSS INDEX
 1) home-one ---------------[########################]
 ########################*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
 /*===========================
 1.1) preloader area here
 ===========================*/
@@ -154,8 +157,8 @@ CSS INDEX
 }
 .secondaryButton.buttonH1 {
     color: var(--white);
-    background: var(--clientcolor2);
-    border: 1px solid var(--clientcolor2);
+    background: var(--clientColor);
+    border: 1px solid var(--clientColor);
 }
 .transparentButton.buttonH1 {
     color: var(--blackH1);
@@ -550,7 +553,7 @@ span.marking {
 .about_features {
     position: relative;
     overflow: hidden;
-    background-color: var(--clientColor);
+    background-color: var(--white);
 }
 .abf_container .abf_items .abf_item:not(:last-child) {
     margin-bottom: 60px;
@@ -565,7 +568,7 @@ span.marking {
     margin-bottom: 30px !important;
 }
 .abf_container .abf_content .section_heading {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 56px;
     font-weight: 600;
     line-height: 58px;
@@ -574,7 +577,7 @@ span.marking {
 
 }
 .abf_container .abf_content .section_heading2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 50px;
     font-weight: 600;
     line-height: 58px;
@@ -1017,7 +1020,7 @@ span.marking {
     font-weight: 400;
     font-size: 16px;
     line-height: 44px;
-    text-transform: capitalize;
+    text-transform: inherit;
     display: block;
     color: var(--blackDesH1);
 }
@@ -3091,3 +3094,5 @@ span.underline2 {
     position: absolute;
     top: 35%;
 }
+
+.mr-70px{ margin-right: 70px; }
